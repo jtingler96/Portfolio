@@ -55,8 +55,8 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Joshua and I'm a <span>Software Developer</span></div>
-                    <p>Text about me</p>
-                    <a href="#">Download Resume</a>
+                    <p>I’m a highly motivated technical professional with a current secret security clearance. I work well as a team member, but I also have experience with training, supervising, and counseling. I have dedicated experience with troubleshooting, and I’m a fast learner. Some technologies I’ve worked with are HTML, CSS, JavaScript, Bootstrap, C#, SQL, and .NET 5.</p>
+                    <a href="Joshua Tingler Resume 20210713.docx">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -72,9 +72,19 @@
                         <li><a href="#home"><img src="Images/portfolio preview.png" alt=""></a></li>
                         <div class="text">My Portfolio</div>
                         <Div class= "skills-used">
-                            <p>HTML CSS Javascript Jquery</p>
+                            <p>HTML CSS Javascript</p>
                         </Div> 
                         <p>A space to share my work with others</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <li><a target=_blank href="https://joshua-and-laura-wedding.com/"><img src="images/ourWedding.png" alt=""></a></li>
+                        <div class="text">Wedding RSVP</div>
+                        <Div class= "skills-used">
+                            <p>HTML CSS Javascript Bootstrap</p>
+                        </Div> 
+                        <p>Wedding site with RSVP and Gallery</p>
                     </div>
                 </div>
                 <div class="card">
@@ -89,22 +99,12 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <li><a target=_blank href="reverse.html"><img src="images/reverse a string.png" alt=""></a></li>
+                        <li><a href="reverse.html"><img src="Images/reverse a string.png" alt=""></a></li>
                         <div class="text">Reverse a string</div>
                         <Div class= "skills-used">
                             <p>HTML CSS Javascript</p>
                         </Div> 
                         <p>Takes input from the user and reverses it</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <li><a href="#home"><img src="Images/Projects.jpg" alt=""></a></li>
-                        <div class="text">Coming soon</div>
-                        <Div class= "skills-used">
-                            <p>Technologies used</p>
-                        </Div> 
-                        <p>A new project will be added here soon</p>
                     </div>
                 </div>
             </div>
@@ -138,23 +138,43 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form name="todo-ContactForm" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <label class="form-label"></label>
+                                <input type="text" name="firstName" class="form-control" placeholder="First name"
+                                    aria-label="First name" required>
                             </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                            <div class="field name">
+                                <label class="form-label"></label>
+                                <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                                    aria-label="Last name" required>
                             </div>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                        <div class="fields">
+                            <div class="field">
+                                <label class="field"></label>
+                                <input type="email" name="email" class="form-control" placeholder="Email"
+                                    aria-label="Email" required>
+                            </div>
                         </div>
-                        <div class="field textarea">
-                             <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+                        <div class="fields">
+                            <div class="field">
+                                <label class="form-label"></label>
+                                <input type="text" name="subject" class="form-control" placeholder="Subject"
+                                    aria-label="Subject" required>
+                            </div>
+                        </div>
+                        <div class="fields textarea">
+                            <div class="field">
+                                <label class="form-label"></label>
+                                <textarea type="text" name="message" class="form-control" placeholder="Message"
+                                    aria-label="Message" required></textarea>
+                            </div>
                         </div>
                         <div class="button">
-                            <button type= "submit">Send message</button>
+                            <div data-netlify-recaptcha="true"></div>
+                            <button type="submit" class="contactbutton">Submit</button>
                         </div>
                     </form>
                 </div>
