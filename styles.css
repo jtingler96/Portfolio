@@ -557,6 +557,9 @@ section .title::after{
     color: #2dc076;
     padding: 10px;
 }
+.fa-angle-up{
+    color: #fff;
+}
 /* footer section styling */
 footer{
     background: #111;
