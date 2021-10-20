@@ -556,7 +556,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="#">
+                      <form name="todo-ContactForm" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                           <div class="row mb-1">
                               <div class="col">
                                   <label class="form-label"></label>
@@ -596,6 +596,7 @@
                               </div>
                           </div>
                           <div class="col text-center text-md-start pt-3">
+                            <div netlify-honeypot="bot-field"></div>
                             <button type="submit" class="btn btn-blue mt-2">Send message</button>
                         </div>
                       </form>
